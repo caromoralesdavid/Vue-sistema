@@ -1,6 +1,6 @@
 # Sistema-Asistencias
 
-This template should help get you started developing with Vue 3 in Vite.
+Este es un sistema de asistencias básico, toma la cc del empleado, la ingresa, marca salida o entrada, toma la fecha y hora local, lo almacena y así se obtiene un registro de las asistencias del empleado a la empresaa durante el mes.
 
 ## Recommended IDE Setup
 
