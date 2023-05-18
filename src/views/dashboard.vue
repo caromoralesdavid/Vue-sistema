@@ -29,5 +29,9 @@ export default {
       ],
     };
   },
+
+  logout() {
+    this.$router.push("/login");
+  },
 };
 </script>

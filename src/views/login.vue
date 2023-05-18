@@ -38,6 +38,9 @@ export default {
         alert("Credenciales inválidas. Inténtalo de nuevo.");
       }
     },
+    logout() {
+      this.$router.push("/login.vue");
+    },
   },
 };
 </script>
