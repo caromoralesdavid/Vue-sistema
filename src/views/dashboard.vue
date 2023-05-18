@@ -8,7 +8,9 @@
 
     <h3>Opciones de administración:</h3>
     <div>
-      <button @click="crearUsuario">Crear nuevo usuario</button>
+      <button @click="crearUsuario">
+        <router-link to="../views/CrearUsuario">Crear nuevo usuario</router-link>
+      </button>
       <button @click="editarUsuario">Editar usuario</button>
       <button @click="eliminarUsuario">Eliminar usuario</button>
     </div>
@@ -42,12 +44,15 @@ export default {
           // El usuario se creó correctamente
           const newUser = await response.json();
           this.users.push(newUser);
-          // Realiza alguna acción adicional si es necesario
+          //
         } else {
-          // Maneja el caso de error en la creación del usuario
+          // Error en la creación del usuario
+          const errorData = await response.json();
+          console.error("Error al crear usuario:", errorData.message);
         }
       } catch (error) {
-        // Maneja el error de la petición
+        // Error en la petición:
+        console.error("Error de red:", error);
       }
     },
   },
