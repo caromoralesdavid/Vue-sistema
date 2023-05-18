@@ -23,8 +23,6 @@ import { RouterLink, RouterView } from "vue-router";
       <button class="entrada">Entrada</button>
       <button class="entrada">Salida</button>
     </div>
-
-    <!-- <a href="" class="admin-button">Administrador</a> -->
   </body>
   <router-link to="/login">Admin</router-link>
   <RouterView />

@@ -22,16 +22,16 @@
 export default {
   data() {
     return {
-      username: "david",
-      password: "david",
+      username: "D.caro",
+      password: "12345",
     };
   },
   methods: {
     login() {
-      if (this.username === "usuario" && this.password === "contrasena") {
+      if (this.username === "D.caro" && this.password === "12345") {
         // Inicio de sesión exitoso
         alert("¡Inicio de sesión exitoso!");
-        // Aquí puedes redirigir a otra página, por ejemplo:
+        // Redirigir a otra página:
         this.$router.push("/dashboard");
       } else {
         // Credenciales inválidas

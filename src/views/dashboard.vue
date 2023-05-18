@@ -12,6 +12,8 @@
       <li>Editar usuario</li>
       <li>Eliminar usuario</li>
     </ul>
+
+    <button @click="logout">Cerrar sesión</button>
   </div>
 </template>
 
