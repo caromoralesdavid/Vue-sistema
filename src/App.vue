@@ -21,12 +21,11 @@ import { RouterLink, RouterView } from "vue-router";
       <label for="input-text">Ingrese su cédula: </label>
       <input type="text" id="input-text" />
       <button class="entrada">Entrada</button>
-      <a class="salida">Salida</a>
+      <button class="entrada">Salida</button>
     </div>
-    <!-- </div> -->
-    <router-link to="">Admin</router-link>
 
     <!-- <a href="" class="admin-button">Administrador</a> -->
   </body>
+  <router-link to="/login">Admin</router-link>
   <RouterView />
 </template>
