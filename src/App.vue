@@ -26,7 +26,7 @@ import { RouterLink, RouterView } from "vue-router";
     <!-- </div> -->
     <router-link to="">Admin</router-link>
 
-    <a href="" class="admin-button">Administrador</a>
+    <!-- <a href="" class="admin-button">Administrador</a> -->
   </body>
   <RouterView />
 </template>
