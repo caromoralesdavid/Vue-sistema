@@ -7,11 +7,11 @@
     </ul>
 
     <h3>Opciones de administración:</h3>
-    <ul>
-      <li>Crear nuevo usuario</li>
-      <li>Editar usuario</li>
-      <li>Eliminar usuario</li>
-    </ul>
+    <div>
+      <button @click="crearUsuario">Crear nuevo usuario</button>
+      <button @click="editarUsuario">Editar usuario</button>
+      <button @click="eliminarUsuario">Eliminar usuario</button>
+    </div>
 
     <button @click="logout">Cerrar sesión</button>
   </div>
@@ -21,15 +21,36 @@
 export default {
   data() {
     return {
-      users: [
-        { id: 1, name: "Usuario 1" },
-        { id: 2, name: "Usuario 2" },
-        { id: 3, name: "Usuario 3" },
-        // Agrega más usuarios según necesites
-      ],
+      users: [],
     };
   },
+  methods: {
+    async crearUsuario() {
+      try {
+        // Realiza una petición a tu API para crear un nuevo usuario
+        const response = await fetch("/api/users", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            // Datos del nuevo usuario
+          }),
+        });
 
+        if (response.ok) {
+          // El usuario se creó correctamente
+          const newUser = await response.json();
+          this.users.push(newUser);
+          // Realiza alguna acción adicional si es necesario
+        } else {
+          // Maneja el caso de error en la creación del usuario
+        }
+      } catch (error) {
+        // Maneja el error de la petición
+      }
+    },
+  },
   logout() {
     this.$router.push("/login");
   },
