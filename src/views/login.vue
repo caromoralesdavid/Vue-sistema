@@ -22,13 +22,13 @@
 export default {
   data() {
     return {
-      username: "D.caro",
-      password: "12345",
+      username: "",
+      password: "",
     };
   },
   methods: {
     login() {
-      if (this.username === "D.caro" && this.password === "12345") {
+      if (this.username === "david" && this.password === "david") {
         // Inicio de sesión exitoso
         alert("¡Inicio de sesión exitoso!");
         // Redirigir a otra página:
