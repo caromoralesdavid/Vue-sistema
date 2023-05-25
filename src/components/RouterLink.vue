@@ -1,4 +1,8 @@
 <template>
+  <a :href="to" @click.prevent="navigate">
+    <slot></slot>
+  </a>
+
   <div>
     <header>
       <h1>CONTROL DE ASISTENCIAS</h1>
@@ -25,15 +29,17 @@
 </template>
 
 <script>
-import { RouterLink, RouterView } from "vue-router";
-
-// Importar y registrar el componente HelloWorld aquí si es necesario
-
 export default {
-  components: {
-    RouterLink,
-    RouterView,
-    // HelloWorld
+  props: {
+    to: {
+      type: String,
+      required: true,
+    },
+  },
+  methods: {
+    navigate() {
+      this.$router.push(this.to);
+    },
   },
 };
 </script>

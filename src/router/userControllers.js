@@ -75,31 +75,31 @@ exports.forgotPassword = async (req, res) => {
 };
 exports.create = async (req, res) => {
     try {
-      // Obtén los datos del nuevo usuario del cuerpo de la solicitud
-      const { username, password } = req.body;
-  
-      // Verifica si ya existe un usuario con el mismo nombre de usuario
-      const existingUser = await User.findOne({ username });
-      if (existingUser) {
-        return res.status(400).json({ message: 'El nombre de usuario ya está en uso' });
-      }
-  
-      // Crea una instancia del modelo de usuario con los datos proporcionados
-      const newUser = new User({
-        username,
-        password,
-      });
-  
-      // Guarda el nuevo usuario en la base de datos
-      await newUser.save();
-  
-      // Devuelve una respuesta de éxito con el usuario creado
-      res.status(201).json(newUser);
+        // Obtén los datos del nuevo usuario 
+        const { username, password } = req.body;
+
+        // Verifica si ya existe un usuario con el mismo nombre d
+        const existingUser = await User.findOne({ username });
+        if (existingUser) {
+            return res.status(400).json({ message: 'El nombre de usuario ya está en uso' });
+        }
+
+        // Crea una instancia del usuario con los datos proporcionados
+        const newUser = new User({
+            username,
+            password,
+        });
+
+        // Guarda el nuevo usuario en la base de datos
+        await newUser.save();
+
+        // Devuelve una respuesta de éxito con el usuario creado
+        res.status(201).json(newUser);
     } catch (error) {
-      // Maneja el error de la creación del usuario
-      console.error('Error al crear usuario:', error);
-      res.status(500).json({ message: 'Error al crear el usuario' });
+        // Maneja el error de la creación del usuario
+        console.error('Error al crear usuario:', error);
+        res.status(500).json({ message: 'Error al crear el usuario' });
     }
-  };
-  
+};
+
 
