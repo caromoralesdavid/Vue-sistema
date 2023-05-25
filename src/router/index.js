@@ -1,23 +1,19 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import HomeView from '../views/Registros.vue';
+import Registros from '../views/Registros.vue';
 import ResetPassword from '../views/resetPassword.vue';
-import LoginView from '../views/Login.vue';
+import Login from '../views/Login.vue';
 import Dashboard from '../views/Dashboard.vue';
-import Vue from 'vue';
-import Home from '@/components/Home.vue';
-
-Vue.use(VueRouter);
 
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: HomeView
+    component: Registros
   },
   {
     path: '/login',
     name: 'Login',
-    component: LoginView
+    component: Login
   },
   {
     path: '/reset-password',
@@ -37,4 +33,5 @@ const router = createRouter({
 });
 
 export default router;
+
 
