@@ -1,24 +1,5 @@
 <template>
-  <div class="encabezado">
-    <header>
-      <h1>CONTROL DE ASISTENCIAS</h1>
-
-    </header>
-
-    <img alt="Vue logo" class="logo" src="@/components/icons/LogoAsistencia.png" width="125" height="125" />
-    <div class="content">
-      <label for="input-text">Ingrese su cédula:</label><br>
-      <!-- <input type="text" id="input-text" v-model="cedula" /> -->
-      <input type="text" id="input-text" v-model="cedula" autocomplete="off" /><br><br>
-      <button class="entrada" @click="marcarEntrada">Entrada</button>
-      <button class="salida" @click="marcarSalida">Salida</button>
-    </div>
-    <br>
-    <router-view></router-view>
-    <div class="acceso">
-      <router-link to="/login" target="_blank">Acceso</router-link>
-    </div>
-  </div>
+  <router-view></router-view>
 </template>
 
 <script>
