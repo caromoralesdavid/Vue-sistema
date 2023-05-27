@@ -1,18 +1,23 @@
 <template>
   <div>
     <h2>Dashboard</h2>
-    <h3>Usuarios con acceso:</h3>
+    <!-- <h3>Usuarios con acceso:</h3>
     <ul>
       <li v-for="user in users" :key="user.id">{{ user.name }}</li>
-    </ul>
+    </ul> -->
 
     <h3>Opciones de administración:</h3>
     <div>
       <button @click="crearUsuario">
         <router-link to="../views/CrearUsuario">Crear nuevo usuario</router-link>
       </button>
-      <button @click="editarUsuario">Editar usuario</button>
-      <button @click="eliminarUsuario">Eliminar usuario</button>
+      <button @click="editarUsuario">
+        <router-link to="">Editar usuario</router-link>
+      </button>
+      <button @click="eliminarUsuario">
+        <router-link to="">Eliminar usuario</router-link>
+      </button>
+      <button @click="">Volver</button>
     </div>
 
     <button @click="logout">Cerrar sesión</button>

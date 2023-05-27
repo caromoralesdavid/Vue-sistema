@@ -24,7 +24,7 @@
 
     <router-view></router-view>
     <!-- Utiliza "router-view" en lugar de "RouterView" -->
-    <router-link to="/login">Acceso</router-link>
+    <router-link to="/dashboard">Acceso</router-link>
     <!-- Utiliza "router-link" en lugar de "RouterLink" -->
   </div>
 </template>
