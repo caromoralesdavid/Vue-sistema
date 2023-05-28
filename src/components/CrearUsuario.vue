@@ -12,18 +12,8 @@
         </form>
     </div>
 </template>
-<script>
-<script>
+<script>    
+
     export default {
-        data() {
-    return {
-        username: "",
-    password: "",
     };
-  },
-    methods: {
-        async crearUsuario() {
-    }
-    }     
-};
 </script>

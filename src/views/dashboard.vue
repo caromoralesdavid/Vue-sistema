@@ -3,7 +3,7 @@
     <div class="sidebar">
       <h2>Assistant Web</h2>
       <button @click="crearUsuario">
-        <router-link to="../views/CrearUsuario">Nuevo Usuario</router-link>
+        <router-link to="./CrearUsuario">Nuevo Usuario</router-link>
       </button>
       <button @click="editarUsuario">
         <router-link to="">Editar Usuario</router-link>
@@ -17,7 +17,7 @@
       <button @click="logout">Cerrar sesión</button>
     </div>
 
-    <div class="content">
+    <div class="content-2">
 
       <!-- <h3>Usuarios con acceso:</h3>
       <ul>
@@ -64,7 +64,7 @@
   background-color: #4e89d6;
 }
 
-.content {
+.content-2 {
   flex: 1;
   padding: 20px;
 }
@@ -75,7 +75,6 @@ h2 {
   margin-bottom: 20px;
   font-weight: bold;
   border-bottom: 2px solid #0ee06d;
-  display: inline-block;
   padding-bottom: 5px;
   font-style: italic;
   /* color: #333333;
