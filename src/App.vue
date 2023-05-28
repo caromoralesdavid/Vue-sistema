@@ -1,27 +1,6 @@
 <template>
   <router-view></router-view>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      cedula: "",
-    };
-  },
-  methods: {
-    marcarEntrada() {
-      // Realizar la solicitud a la API o servidor backend para registrar la entrada
-      // ...
-    },
-    marcarSalida() {
-      // Realizar la solicitud a la API o servidor backend para registrar la salida
-      // ...
-    },
-  },
-};
-</script>
-
 <style>
 body {
   padding: 10px;
@@ -35,6 +14,8 @@ body {
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
 }
+
+
 
 .content input {
   border-radius: 10px;

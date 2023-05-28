@@ -19,7 +19,7 @@ connection.connect((error) => {
   console.log('Conexión establecida con la base de datos');
 });
 
-// Ruta para registrar asistencia
+// Ruta para registrar asistenciacd Vue
 app.post('/registro-asistencia', (req, res) => {
   // Obtener los datos de la asistencia desde la solicitud (por ejemplo, la cédula)
   const { cedula } = req.body;

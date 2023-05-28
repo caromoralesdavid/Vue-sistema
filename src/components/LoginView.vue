@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="">
     <h1>Login</h1>
     <form @submit="login">
       <label for="username">Usuario:</label>
@@ -33,52 +33,4 @@ export default {
   },
 };
 </script>
-<style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-    }
 
-    .card {
-      width: 300px;
-      background-color: #ffffff;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      margin: 0 auto;
-      margin-top: 100px;
-    }
-
-    .card label {
-      display: block;
-      margin-bottom: 10px;
-      color: #333333;
-    }
-
-    .card input[type="text"],
-    .card input[type="password"] {
-      width: 100%;
-      padding: 8px;
-      border-radius: 3px;
-      border: 1px solid #cccccc;
-    }
-
-    .card input[type="submit"] {
-      background-color: #4caf50;
-      color: #ffffff;
-      border: none;
-      padding: 10px 16px;
-      margin-top: 20px;
-      border-radius: 3px;
-      cursor: pointer;
-    }
-
-    .card input[type="submit"]:hover {
-      background-color: #45a049;
-    }
-
-    .card label:hover {
-      color: #007bff;
-      cursor: pointer;
-    }
-  </style>
