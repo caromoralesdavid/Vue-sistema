@@ -53,13 +53,14 @@ h2 {
   font-weight: bold;
   font-size: 16px;
   margin-bottom: 10px;
+  max-width: 16px;
 }
 
 input {
   padding: 8px;
   border: 1px solid #cccccc;
   border-radius: 4px;
-  width: 200px;
+  /* width: 200px; */
   margin-bottom: 10px;
 }
 

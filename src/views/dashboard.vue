@@ -9,7 +9,7 @@
         <router-link to="">Editar Usuario</router-link>
       </button>
       <button @click="eliminarUsuario">
-        <router-link to="">Eliminar Usuario</router-link>
+        <router-link to="./EliminarUsuario">Eliminar Usuario</router-link>
       </button>
       <button>
         <router-link to="./login">Volver</router-link>

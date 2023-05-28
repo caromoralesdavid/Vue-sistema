@@ -3,6 +3,8 @@ import HomeView from '../views/Registros.vue';
 import ResetPassword from '../views/resetPassword.vue';
 import LoginView from '../views/Login.vue';
 import Dashboard from '../views/Dashboard.vue';
+import CrearUsuario from '../views/CrearUsuario.vue'
+
 
 const routes = [
   {
@@ -24,7 +26,13 @@ const routes = [
     path: '/dashboard',
     name: 'Dashboard',
     component: Dashboard
-  }
+  },
+  {
+    path: '/CrearUsuario',
+    name: 'CrearUsuario',
+    component: CrearUsuario
+  },
+
 ];
 
 const router = createRouter({

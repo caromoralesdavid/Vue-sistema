@@ -15,8 +15,9 @@ body {
   font-family: 'Times New Roman', Times, serif;
 }
 
-
-
+.label{
+  max-width: 200px;
+}
 .content input {
   border-radius: 10px;
 }
@@ -51,7 +52,7 @@ img {
 }
 
 .salida:hover {
-  background-color: red;
+  background-color: rgb(255, 218, 6);
   cursor: pointer;
   color: antiquewhite;
 }
